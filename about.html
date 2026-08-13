@@ -409,6 +409,72 @@ em{font-family:Georgia,Times,serif;font-weight:400}
   }
 }
 
+
+/* V9.2.4 — remove unintended black Doktora / LIVE ↔ VR panel */
+.thesis-field .thesis-grid{
+  display:grid!important;
+  grid-template-columns:minmax(0,1.35fr) minmax(240px,.65fr)!important;
+  gap:40px!important;
+  margin-top:38px!important;
+  background:transparent!important;
+  border:0!important;
+}
+.thesis-field .thesis-grid>div{
+  min-height:0!important;
+  height:auto!important;
+  padding:0!important;
+  background:transparent!important;
+  color:var(--ink)!important;
+}
+.thesis-field .thesis-method{
+  border-left:1px solid var(--line)!important;
+  border-top:0!important;
+  padding-left:28px!important;
+}
+.thesis-field .thesis-title h2,
+.thesis-field .thesis-title p,
+.thesis-field .thesis-method,
+.thesis-field .thesis-method p,
+.thesis-field .thesis-method b,
+.thesis-field .thesis-method small{
+  color:var(--ink)!important;
+}
+.thesis-field .thesis-title>span{
+  color:var(--acid)!important;
+}
+.thesis-field .thesis-visual{
+  margin-top:34px!important;
+  min-height:0!important;
+  height:auto!important;
+  background:transparent!important;
+}
+.thesis-field .thesis-visual img{
+  display:block!important;
+  width:100%!important;
+  height:auto!important;
+  max-height:none!important;
+  object-fit:cover!important;
+}
+@media(max-width:760px){
+  .thesis-field .thesis-grid{
+    display:block!important;
+    margin-top:28px!important;
+  }
+  .thesis-field .thesis-grid>div{
+    padding:0!important;
+    min-height:0!important;
+  }
+  .thesis-field .thesis-method{
+    margin-top:24px!important;
+    border-left:0!important;
+    border-top:1px solid var(--line)!important;
+    padding:22px 0 0!important;
+  }
+  .thesis-field .thesis-visual{
+    margin-top:26px!important;
+  }
+}
+
 </style>
 <title>Hakkımda — Onur Öztay</title>
 <meta content="Onur Öztay'ın tiyatro, yönetmenlik, eğitim, akademik araştırma ve VR/XR tabanlı performans pratiği." name="description"/>
